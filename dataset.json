@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Create a Python script that uses boto3 to list all EC2 instances across all regions, including their instance ID, type, state, and launch time, and export the results to a CSV file"
+  },
+  {
+    "task": "Write a regex pattern that validates AWS IAM ARN (Amazon Resource Name) format for S3 buckets, ensuring it matches the structure 'arn:aws:s3:::bucket-name' or 'arn:aws:s3:::bucket-name/*' with proper bucket naming conventions"
+  },
+  {
+    "task": "Generate a JSON CloudFormation template that creates a VPC with public and private subnets across two availability zones, including an Internet Gateway, NAT Gateway, and appropriate route tables"
+  }
+]
