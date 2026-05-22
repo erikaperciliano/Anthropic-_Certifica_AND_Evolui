@@ -1,11 +1,17 @@
 [
   {
-    "task": "Create a Python script that uses boto3 to list all EC2 instances across all regions, including their instance ID, type, state, and launch time, and export the results to a CSV file"
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket-name/path/to/file.txt') and extract only the bucket name",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly extract bucket names from S3 URIs, handling various valid S3 bucket naming conventions (lowercase letters, numbers, hyphens) and return only the bucket name without the 's3://' prefix or path"
   },
   {
-    "task": "Write a regex pattern that validates AWS IAM ARN (Amazon Resource Name) format for S3 buckets, ensuring it matches the structure 'arn:aws:s3:::bucket-name' or 'arn:aws:s3:::bucket-name/*' with proper bucket naming conventions"
+    "task": "Create a JSON configuration object for an AWS Lambda function that includes function name, runtime, role ARN, timeout, and memory allocation settings",
+    "format": "json",
+    "solution_criteria": "The JSON should be valid and contain all required Lambda function configuration fields with realistic AWS values, proper data types (string for ARN, integer for timeout and memory), and follow AWS naming conventions"
   },
   {
-    "task": "Generate a JSON CloudFormation template that creates a VPC with public and private subnets across two availability zones, including an Internet Gateway, NAT Gateway, and appropriate route tables"
+    "task": "Write a Python function that validates an AWS IAM role name according to AWS naming rules (alphanumeric characters, hyphens, underscores, and forward slashes allowed; 1-64 characters long) and returns True if valid, False otherwise",
+    "format": "python",
+    "solution_criteria": "The function should correctly validate IAM role names against AWS rules, handle edge cases (empty strings, names exceeding 64 characters), and return a boolean value"
   }
 ]
